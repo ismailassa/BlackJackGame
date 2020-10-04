@@ -7,10 +7,14 @@ namespace BlackJackGame.Models
     public class BlackJack
     {
 
+        private Deck _deck;
         public bool FaceDown;
         public bool FaceUp;
 
+
         public GameState GameState { get; set; }
+        public Hand PlayerHand { get; set; }
+        public Hand DealerHand { get; set; }
 
         public void AddCardToHand(Hand hand, bool faceUp)
         {

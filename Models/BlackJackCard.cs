@@ -7,24 +7,23 @@ namespace BlackJackGame.Models
     public class BlackJackCard : Card
     {
 
-        private List<BlackJackCard> _cards;
-
         #region Propreties
         public bool FaceUp { get; set; }
         public int Value { get; }
         #endregion
 
         #region Constructor
-        public BlackJackCard(Suit suit, FaceValue faceValue) : base(suit, faceValue)
+        public BlackJackCard(Suit suit, FaceValue faceValue) : base(suit,faceValue)
         {
-            throw new NotImplementedException();
+            this.FaceUp = false;
+            this.Value = FaceUp ? (int)faceValue : 0;
         }
         #endregion
 
         #region Methodes
         public void TurnCard()
         {
-
+            this.FaceUp = true;
         } 
         #endregion
 

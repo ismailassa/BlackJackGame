@@ -6,13 +6,14 @@ namespace BlackJackGame.Models
     {
         #region Propreties
         public FaceValue FaceValue { get; set; }
-        public int Suit { get; }
+        public Suit Suit { get; }
         #endregion
 
         #region Constructor
         public Card(Suit suit, FaceValue faceValue)
         {
-            throw new NotImplementedException();
+            this.FaceValue = faceValue;
+            this.Suit = suit;
         }
         #endregion
     }

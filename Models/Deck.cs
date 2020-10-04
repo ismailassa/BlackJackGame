@@ -8,6 +8,8 @@ namespace BlackJackGame.Models
     public class Deck
     {
 
+        protected List<BlackJackCard> _cards;
+
         #region Fields
         private Random _random;
         #endregion
