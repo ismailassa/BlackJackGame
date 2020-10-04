@@ -7,6 +7,8 @@ namespace BlackJackGame.Models
     public class BlackJackCard : Card
     {
 
+        private List<BlackJackCard> _cards;
+
         #region Propreties
         public bool FaceUp { get; set; }
         public int Value { get; }
