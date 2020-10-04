@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BlackJackGame.Models
 {
     public class Card
     {
         #region Propreties
-        public bool FacuUp { get; set; }
-        public int Value { get; }
+        public FaceValue FaceValue { get; set; }
+        public int Suit { get; }
         #endregion
 
         #region Constructor
